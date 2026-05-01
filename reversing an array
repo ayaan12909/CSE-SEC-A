@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+  int array[]={1,2,3,4,5};
+  int n=5;
+  int x=0,y=n-1;
+  int var;
+  while(x<=y){
+      var=array[x];
+      array[x]=array[y];
+      array[y]=var;
+      x++,y--;
+  }
+  for(int i=0;i<n;i++){
+      printf("%d ",array[i]);
+  }
+    return 0;
+}

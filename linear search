@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int linearSearch(int arr[], int sz, int key)
+{
+    for (int i = 0; i < sz; i++)
+    {
+        if (arr[i] == key)
+        {
+            return i ;
+        }
+    }
+    return -1;
+}
+
+int main()
+{
+    int arr[] = {1,2,3,4,5,6,7,8};
+    int target = 5;
+    int sz = 8;
+
+    printf("%d", linearSearch(arr, sz, target));
+
+    return 0;
+}
